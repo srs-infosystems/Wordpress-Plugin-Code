@@ -1,0 +1,24 @@
+#microinv-select {
+text-align:center;
+display:inline;
+padding-left:165px;
+}
+
+.microinv-m-input {
+width:370px;
+}
+
+#microinv-from-fields .headlabel {
+font-weight:700;
+padding-bottom:12px;
+}
+
+#mi-microdata-form {
+overflow:hidden;
+padding-top:7px;
+}
+
+#microinv-result {
+margin-top:7px;
+margin-bottom:7px;
+}

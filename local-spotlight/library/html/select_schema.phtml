@@ -1,0 +1,27 @@
+<form action="" method="post" id="mi-microdata-form" >
+  <div>
+    <div id="microinv-select">
+      <label for="type"><b>Microdata Schemas:</b></label>
+      <select name="type" id="type" onChange="ls_load_schema_inputs(this.value)">
+        <option value="local_business">Local Business</option>
+        <option value="place">Place</option>
+        <option value="product">Product</option>
+        <option value="review">Review</option>
+        <option value="event">Event</option>
+        <option value="organization">Organization</option>
+        <option value="person">Person</option>
+      </select>
+    </div>
+    <div id="loading-image" style="display:none;"><img src="images/loading.gif" alt="Loading..."></div>
+    <div id="ls-input-data"></div>
+    <div  align="center" id="microdata-save-butns" style="display:none;">
+      <textarea id='microinv-result' style='height:160px;width:600px;'></textarea>
+      <br />
+      <input type='button' value='Generate Schema' id='create_microdata_button' name='create_microdata_button' class='button-primary' onclick='ls_create_microdata()'/>
+      <div id="save-micro-button" style="display:none;">
+        <input type='button' value='Add to Post' id="save_microdata_button" name='save_microdata_button' class='button-primary' onclick='ls_save_microdata()'/>
+      </div>
+      <input type='button' value='Clear Fields' id='ls_clear_microdata_button' name='ls_clear_microdata_button' class='button-primary' onclick='ls_clear_microdata()'/>
+    </div>
+  </div>
+</form>
